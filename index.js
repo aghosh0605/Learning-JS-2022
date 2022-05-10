@@ -1,53 +1,51 @@
-//From video https://www.youtube.com/watch?v=8dWL3wF_OMw&t=383s
+//Video at https://www.youtube.com/watch?v=8dWL3wF_OMw
 
-console.log("I need a pizza");
+//Hypotenuse Calculation
+//--------------------------------------------------------------------
+// let a;
+// let b;
+// let c;
 
-//window.alert("Where is my Pizza?");
-//This is a comment
-/*
-This is a multiline comment..
-*/
-let age;
-console.log("This age will be undefined", age);
-age = 25;
-console.log(typeof age);
-age = String(age);
-console.log(typeof age);
-var firstName = "Aniruddha";
-const student = true;
-document.getElementById("p1").innerHTML = "Hello" + firstName;
-document.getElementById("p2").innerHTML = "My age" + age;
-document.getElementById("p3").innerHTML = "isStudent" + student;
+// document.getElementById("submitButton").onclick = function () {
+//   a = document.getElementById("aTextbox").value;
+//   a = Number(a);
+//   //b = window.prompt("Enter side B");
+//   b = document.getElementById("bTextbox").value;
+//   b = Number(b);
+//   c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+//   console.log(c);
+//   document.getElementById("cLabel").innerHTML = "Side C: " + c;
+// };
 
-// How to accept user input
-// 1. Easy with window prompt
-// let username = window.prompt("What's your name?");
-// console.log(username);
-// 2. Difficult with HTML Textbox
-document.getElementById("myButton").onclick = function () {
-  username = document.getElementById("myText").value;
-  console.log(username);
-  document.getElementById("myLabel").innerHTML = username;
+//Counter Program
+//------------------------------------------------------------------------
+// let count = 0;
+// document.getElementById("decreaseBtn").onclick = function () {
+//   count -= 1;
+//
+// };
+// document.getElementById("resetBtn").onclick = function () {
+//   count = 0;
+//   document.getElementById("countLabel").innerHTML = count;
+// };
+// document.getElementById("increaseBtn").onclick = function () {
+//   count += 1;
+//   document.getElementById("countLabel").innerHTML = count;
+// };
+
+//Random Number Generator
+//--------------------------------------------------------------------------
+let x, y, z;
+document.getElementById("rollButton").onclick = function () {
+  x = Math.floor(Math.random() * 6) + 1; //Random Number between 1-6
+  y = Math.floor(Math.random() * 6) + 1;
+  z = Math.floor(Math.random() * 6) + 1;
+  document.getElementById("xLabel").innerHTML = x;
+  document.getElementById("yLabel").innerHTML = y;
+  document.getElementById("zLabel").innerHTML = z;
+  console.log(x);
+  console.log(y);
+  console.log(z);
 };
 
-let x, y;
-x = Boolean("pizza"); //Check if user done some input or not
-y = Number("pizza"); //Will return NaN
-console.log(x, y);
-
-//Math Functions
-x = Math.PI;
-y = 5;
-let z = 9;
-//x = Math.round(x);
-//x = Math.floor(x);
-//x = Math.ceil(x);
-//x = Math.pow(x, 2);
-//x = Math.sqrt(x);
-//x = Math.abs(x);
-// max = Math.max(x, y, z);
-// min = Math.min(x, y, z);
-
-console.log(x);
-
-//Till time 37.15
+//Time till 51.00
