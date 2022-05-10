@@ -1,3 +1,5 @@
+//From video https://www.youtube.com/watch?v=8dWL3wF_OMw&t=383s
+
 console.log("I need a pizza");
 
 //window.alert("Where is my Pizza?");
@@ -47,3 +49,5 @@ let z = 9;
 // min = Math.min(x, y, z);
 
 console.log(x);
+
+//Till time 37.15
